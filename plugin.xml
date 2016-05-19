@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="aemm-plugin-html-contract"
+    version="1.0.1">
+    <name>AEMM Plugin HTML Contract</name>
+    <description>AEMM Plugin HTML Contract</description>
+    <license></license>
+    <keywords>cordova,dps,aem,aemm,aemmobile,html,htmlcontract</keywords>
+    <repo>https://github.com/adobe-marketing-cloud-mobile/aemm-plugin-html-contract.git</repo>
+
+	<engines>
+        <engine name="cordova-ios" version=">=4.0.0-dev" />
+        <engine name="apple-ios" version=">=9.0" />
+	</engines>
+
+	<js-module src="www/dpshtmlcontract.js" name="dpshtmlInteraction">
+           <clobbers target="dps.htmlContract" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="DPSHtmlContract">
+                <param name="ios-package" value="DPSHtmlContract" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+    </platform>
+
+</plugin>

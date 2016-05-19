@@ -1,0 +1,24 @@
+{
+  "name": "aemm-plugin-html-contract",
+  "version": "1.0.1",
+  "description": "The AEMM Plugin HTML Contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe-marketing-cloud-mobile/aemm-plugin-html-contract.git"
+  },
+  "keywords": [
+    "cordova",
+    "dps",
+    "aem",
+    "aemm",
+    "aemmobile",
+    "html",
+    "htmlcontract"
+  ],
+  "author": "Adobe",
+  "license": "Apache 2.0"
+}
